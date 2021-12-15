@@ -1,0 +1,136 @@
+/*4.2.i> Example of compile time polymorphism - */
+
+class ClassMain{
+void disp(int number)
+{
+System.out.println ("method:" + number);
+}
+void disp(int number1, int number2)
+{
+System.out.println ("method:" + number1 + "," + number2);
+}
+double disp(double number)
+{
+System.out.println("method:" + number);
+return number;
+}
+}
+class CompileTimePolymorphismDemo
+{
+public static void main (String args [])
+{
+ClassMain obj = new ClassMain();
+double result;
+obj.disp(60);
+obj.disp(70, 50);
+result = obj.disp(6.1);
+System.out.println("Answer is:" + result);
+}
+}
+Output:
+       method:60
+       method:70, 50
+       method:6.1
+       Answer is:6.1
+       
+/*4.2.ii>Example of runtime polymorphism - 
+
+class ClassA
+{
+public void disp()
+{
+System.out.println ("I am within Class A");
+}
+}
+class ClassB extends ClassA
+{
+public void disp()
+{
+System.out.println ("I am within Class B");
+}
+}
+public class RunTimePolymorphismDemo
+{
+public static void main (String args []) 
+{
+ClassA obj1 = new ClassA();
+ClassA obj2 = new ClassB();
+obj1.disp();
+obj2.disp();
+}
+}
+
+Output:
+       I am within Class A
+       I am within Class B
+       
+/* Practical: the example programme for Java compile time polymorphism below. Write the same programme with integer
+values 40, 70 and 30. Execute the programme again for integer values 80, 75 and 60. Show the resulting outputs.
+
+class ClassMain{
+void disp(int number)
+{
+System.out.println ("method:" + number);
+}
+void disp(int number1, int number2)
+{
+System.out.println ("method:" + number1 + "," + number2);
+}
+double disp(double number)
+{
+System.out.println("method:" + number);
+return number;
+}
+}
+class CompileTimePolymorphismDemo
+{
+public static void main (String args [])
+{
+ClassMain obj = new ClassMain();
+double result;
+obj.disp(40);
+obj.disp(70, 30);
+result = obj.disp(6.1);
+System.out.println("Answer is:" + result);
+}
+}
+Output:
+       method:40
+       method:70,30
+       method:6.1
+       Answer is:6.1
+       
+/* Execute the programme again for integer values 80, 75 and 60. Show the resulting outputs. */
+
+class ClassMain{
+void disp(int number)
+{
+System.out.println ("method:" + number);
+}
+void disp(int number1, int number2)
+{
+System.out.println ("method:" + number1 + "," + number2);
+}
+double disp(double number)
+{
+System.out.println("method:" + number);
+return number;
+}
+}
+class CompileTimePolymorphismDemo
+{
+public static void main (String args [])
+{
+ClassMain obj = new ClassMain();
+double result;
+obj.disp(80);
+obj.disp(75,60);
+result = obj.disp(6.1);
+System.out.println("Answer is:" + result);
+}
+}
+Output:
+       method:80
+       method:75,60
+       method:6.1
+       Answer is:6.1
