@@ -1,0 +1,103 @@
+/* Assignment Que 1 */
+
+public class Main
+{
+public static void main (String[] args)
+{
+int[] arr;
+arr = new int[5];
+arr[0] = 10;
+arr[1] = 20;
+arr[2] = 30;
+arr[3] = 40;
+arr[4] = 50;
+for (int i = 0; i < arr.length; i++)
+System.out.println("Element at index " + i + " : "+ arr[i]);
+}
+}
+
+Output:
+       Element at index 0 : 10
+       Element at index 1 : 20
+       Element at index 2 : 30
+       Element at index 3 : 40
+       Element at index 4 : 50
+
+
+/* Assignment Que 2 */
+
+public class Main 
+ {
+ public static void main(String[] args)
+ {
+ int a = 4;
+ int var;
+ var = a;
+ System.out.println("var using =: " + var);
+ var += a;
+ System.out.println("var using +=: " + var);
+ var *= a;
+ System.out.println("var using *=: " + var);
+ }
+}
+
+Output :
+      var using =: 4
+      var using +=: 8
+      var using *=: 32
+      
+      
+ /* Assignment Que 3 */  
+ 
+ public class Main 
+ {
+ public static void main(String[] args)
+ {
+ double myDouble = 9.78;
+ int myInt = (int) myDouble;
+ System.out.println(myDouble );
+ System.out.println(myInt);
+ }
+}
+Output : 9.78
+         9
+
+/* Assignment Que 4 */  
+
+public class Test
+{
+public static void main(String[] args) 
+{
+Test t1 = new Test();
+Test t2 = new Test();
+t1 = null;
+System.gc();
+t2 = null;
+Runtime.getRuntime().gc();
+}
+{
+System.out.println("Garbage collector called");
+System.out.println("Object garbage collected : " + this);
+}
+}
+
+Output:
+       Garbage collector called
+       Object garbage collected : Test@46d08f12
+       Garbage collector called
+       Object garbage collected : Test@481779b8
+
+
+/* Assignment Que 5 */  
+
+public class Main
+{
+public static void main(String[]args)
+{
+short temperature;
+temperature = -200;
+System.out.println(temperature);
+}
+}
+
+Output : -200
