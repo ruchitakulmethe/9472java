@@ -1,0 +1,73 @@
+/* Practicals : 
+See the example programme for Java array of objects below. Write the same programme to create an object of arrays
+with the elements ‘dog’, ‘70’, new StringBuilder("bcd") and the integer 6. Show the resulting output. Repeat the
+same with the elements ‘cat’, ‘22’, new StringBuilder("abc") and the integer 9.*/
+
+/*A)The example programme for Java array of objects below.*/
+
+public class Program 
+{
+public static void main(String[] args)
+{
+Object[] elements = new Object[4];
+elements[0] = "elephant";
+elements[1] = 60;
+elements[2] = new StringBuilder("xyz");
+elements[3] = 3.4;
+for (Object e : elements) 
+{
+System.out.println(e);
+}
+}
+}
+
+Output : elephant 
+         60
+         xyz
+         3.4
+         
+  /*B)Write the programme to create an object of arrays with the elements ‘dog’, ‘70’, new StringBuilder("bcd") and the integer 6. */
+  
+ public class Program 
+{
+public static void main(String[] args)
+{
+Object[] elements = new Object[4];
+elements[0] = "dog";
+elements[1] = 70;
+elements[2] = new StringBuilder("bcd");
+elements[3] = 6;
+for (Object e : elements) 
+{
+System.out.println(e);
+}
+}
+}
+
+Output : dog
+         70
+         bcd
+         6
+
+/*C)Write the programme to create an object of arrays with the elements ‘cat’, ‘22’, new StringBuilder("abc") and the integer 9.*/
+
+ public class Program 
+{
+public static void main(String[] args)
+{
+Object[] elements = new Object[4];
+elements[0] = "cat";
+elements[1] = 22;
+elements[2] = new StringBuilder("abc");
+elements[3] = 9;
+for (Object e : elements) 
+{
+System.out.println(e);
+}
+}
+}
+
+Output : cat
+         22
+         abc
+         9
