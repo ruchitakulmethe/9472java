@@ -1,0 +1,40 @@
+/* Practical :A)The example programme for Java arithmetic operators below. Write the programme with values of int a =
+18, and int b = 7 and show the resulting output. */
+
+class Operator
+{
+public static void main(String args[])
+{
+int a=18;
+int b=7;
+System.out.println(a+b); 
+System.out.println(a-b);
+System.out.println(a*b); 
+System.out.println(a/b); 
+}
+}
+
+Output : 25
+         11
+         126
+         2
+         
+/* B)The example programme for Java arithmetic operators below. Write the programme with values of int a = 10 and int b = 3 and show the resulting output.*/
+
+class Operator
+{
+public static void main(String args[])
+{
+int a=10;
+int b=3;
+System.out.println(a+b); 
+System.out.println(a-b);
+System.out.println(a*b); 
+System.out.println(a/b); 
+}
+}
+
+Output : 13
+         7
+         30
+         3
