@@ -1,0 +1,12 @@
+/* Practical : Search and install a Java Development Kit (JDK) on a computer system. Then use the
+command line to execute a Hello World programme.*/
+
+public class main
+{
+    public static void main(String[] args)
+    {
+      System.out.println("Hello,World.");
+    } //End of main
+} //End of main class
+
+Output : Hello,World.
