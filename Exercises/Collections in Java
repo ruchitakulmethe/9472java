@@ -1,0 +1,153 @@
+/* ArrayList */
+import java.util.*;  
+class testjavacollection1
+{  
+public static void main(string args[])
+{  
+arraylist<string> list=new arraylist<string>();
+list.add("kiran"); 
+list.add("yash");  
+list.add("pari");  
+list.add("naitik");  
+iterator itr=list.iterator();  
+while(itr.hasnext()){  
+system.out.println(itr.next());  
+}  
+}  
+}  
+
+Output : Kiran
+         Yash
+         Pari 
+         Naitik
+
+
+/* Linklist */
+import java.util.*;  
+public class TestJavaCollection2
+{  
+public static void main(String args[])
+{  
+LinkedList<String> al=new LinkedList<String>();  
+al.add("LED");  
+al.add("Light");  
+al.add("LCD");  
+al.add("Tv");  
+Iterator<String> itr=al.iterator();  
+while(itr.hasNext())
+{  
+System.out.println(itr.next());  
+}  
+}  
+}  
+
+Output : LED
+         Light
+         LCD
+         Tv
+
+
+/* Vectorlist */
+
+import java.util.*;  
+public class TestJavaCollection3
+{  
+public static void main(String args[])
+{  
+Vector<String> v=new Vector<String>();  
+v.add("Mango");  
+v.add("Apple");  
+v.add("Orange");  
+v.add("Kivi");  
+Iterator<String> itr=v.iterator();  
+while(itr.hasNext())
+{  
+System.out.println(itr.next());  
+}  
+}  
+}  
+
+Output : Mango
+         Apple 
+         Orange
+         Kivi
+
+
+/* Stacklist */
+
+import java.util.*;  
+public class testjavacollection4
+{  
+public static void main(string args[])
+{  
+stack<string> stack = new stack<string>();  
+stack.push("ayush");  
+stack.push("garvit");  
+stack.push("amit");  
+stack.push("ashish");  
+stack.push("garima");  
+stack.pop();  
+iterator<string> itr=stack.iterator();  
+while(itr.hasnext())
+{  
+system.out.println(itr.next());  
+}  
+}  
+}  
+
+Output : Ayush
+         Garvit
+         Amit
+         Ashish
+
+
+/* HashSet */
+
+import java.util.*;  
+public class testjavacollection5
+{  
+public static void main(string args[])
+{    
+hashset<string> set=new hashset<string>();  
+set.add("riya");  
+set.add("vidhya");  
+set.add("riya");  
+set.add("aachal");   
+iterator<string> itr=set.iterator();  
+while(itr.hasnext())
+{  
+system.out.println(itr.next());  
+}  
+}  
+}  
+
+Output : Aachal
+         Vidhya 
+         Riya
+
+
+/* HashLink */
+
+import java.util.*;  
+public class testjavacollection6
+{  
+public static void main(string args[])
+{  
+linkedhashset<string> set=new linkedhashset<string>();  
+set.add("priya");  
+set.add("payal");  
+set.add("priya");  
+set.add("pooja");  
+iterator<string> itr=set.iterator();  
+while(itr.hasnext())
+{  
+system.out.println(itr.next());  
+}  
+}  
+}  
+
+Output : Priya 
+         Payal 
+         Pooja
+
+      
