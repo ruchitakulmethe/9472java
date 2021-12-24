@@ -1,0 +1,16 @@
+/* multithreading code example */
+
+class multi extends thread 
+{
+public void run() 
+{
+system.out.println("multiple thread");
+}
+public static void main(string args[])
+{
+multi t1=new multi();
+t1.start();
+}
+}
+
+Output : multiple thread
