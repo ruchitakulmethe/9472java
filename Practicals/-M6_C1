@@ -1,0 +1,18 @@
+/* The programme for Java multithreading below. Write the same programme to show multithreading for
+the string “multi threads”. Show the resulting output. Repeat the same programme for the string “thread
+multiple” */
+
+class Multi extends Thread 
+{
+public void run() 
+{
+System.out.println("multi threads");
+}
+public static void main(String args[])
+{
+Multi t1=new Multi();
+t1.start();
+}
+}
+
+Output : multi threads
