@@ -1,0 +1,47 @@
+/* The example programme for Java throw keyword below. 
+A) Write the same programme to throw the exception string
+value “invalid” if integer value of age is less than 22, with else condition “welcome aboard”. Validate for age
+value 19. Show the resulting output. */ 
+
+public class Throw1
+{
+static void validate(int age)
+{
+if(age<22)
+throw new ArithmeticException("Invalid");
+else
+System.out.println("welcome aboard");
+}
+public static void main(String args[])
+{
+validate(19);
+System.out.println("code remainder");
+}
+}
+
+Output : Exception in thread "main" java.lang.ArithmeticException: Invalid
+         at Throw1.validate(ThrowDemo1.java:6)
+         at Throw1.main(ThrowDemo1.java:12)
+
+
+B) Repeat the same programme to validate for age value 24. */
+
+public class throw2
+{
+static void validate(int age)
+{
+if(age<22)
+throw new arithmeticexception("invalid");
+else
+system.out.println("welcome aboard");
+}
+public static void main(string args[])
+{
+validate(24);
+system.out.println("code remainder");
+}
+}
+
+Output : welcome aboard
+         code remainder
+
