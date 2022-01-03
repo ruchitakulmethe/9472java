@@ -1,0 +1,58 @@
+/* Example of immutable string in Java */
+
+package hello1;
+public final class immutable
+ {
+private string name;
+immutable (string name) 
+{
+this.name = name;
+}
+public string getname() 
+{
+return name;
+}
+public static void main(string[] args) 
+{
+immutable obj= new immutable ("hello");
+system.out.println(obj.getname());
+//obj.setname("new hello");
+system.out.println(obj.getname());
+}
+}
+
+Output : hello
+         hello
+
+/* Example of mutable string in Java */
+
+
+package hello1;
+public class Mutable
+{
+private String name;
+Mutable(String name) 
+{
+this.name = name;
+}
+public String getName() 
+{
+return name;
+}
+public void setName(String name)
+ {
+this.name = name;
+}
+public static void main(String[] args) 
+{
+Mutable obj = new Mutable("hello1");
+System.out.println(obj.getName());
+obj.setName("new hello1");
+System.out.println(obj.getName());
+}
+}
+
+Output : hello1
+         new hello1
+
+
