@@ -1,0 +1,44 @@
+/* See the example programme for Java array sorting below.Write the same programme to sort the integers 8, 4, 3, 5, 6 and the alphabetical string C, O, I, P, U, in ascending order. Show the resulting output. Repeat the same for the
+integers 10, 7, 9, 13, 17 and the alphabetical string E, H, G, A, C. */
+
+/* A) Write the same programme to sort the integers 8, 4, 3, 5, 6 and the alphabetical string C, O, I, P, U, in ascending order. Show the resulting output. */ 
+
+package sortingarrays.sort;
+import java.util.Arrays;
+public class JavaArraySort
+ {
+public static void main(String[] args) 
+{
+int[] intArr = {8,4,3,5,6};
+String[] strArr = {"C", "O", "I","P","U"};
+Arrays.sort(intArr);
+Arrays.sort(strArr);
+System.out.println(Arrays.toString(intArr));
+System.out.println(Arrays.toString(strArr));
+}
+}
+
+Output : [3, 4, 5, 6, 8]
+         [C, I, O, P, U]
+
+/* B) The same for the
+ integers 10, 7, 9, 13, 17 and the alphabetical string E, H, G, A, C. */
+
+package sortingarrays.sort;
+import java.util.Arrays;
+public class JavaArraySort
+ {
+public static void main(String[] args) 
+{
+int[] intArr = {10,7,9,13,17};
+String[] strArr = {"E", "H", "G","A","C"};
+Arrays.sort(intArr);
+Arrays.sort(strArr);
+System.out.println(Arrays.toString(intArr));
+System.out.println(Arrays.toString(strArr));
+}
+}
+
+Output : [7, 9, 10, 13, 17]
+         [A, C, E, G, H]
+
