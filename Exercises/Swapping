@@ -1,0 +1,64 @@
+/* Call By Value */
+
+public class Tester
+{
+public static void main(String[] args)
+   {
+      int a = 30;
+      int b = 45;
+      System.out.println("Before swapping, a = " + a + " and b = " + b);
+      swapFunction(a, b);
+      System.out.println("\n**Now, Before and After swapping values will be same here**:");
+      System.out.println("After swapping, a = " + a + " and b is " + b);
+   }
+   public static void swapFunction(int a, int b) 
+   {
+      System.out.println("Before swapping(Inside), a = " + a + " b = " + b);
+      int c = a;
+      a = b;
+      b = c;
+      System.out.println("After swapping(Inside), a = " + a + " b = " + b);
+   }
+}
+
+Output : Before swapping, a = 30 and b = 45
+         Before swapping(Inside), a = 30 b = 45
+         After swapping(Inside), a = 45 b = 30
+         **Now, Before and After swapping values will be same here**:
+         After swapping, a = 30 and b is 45
+
+/* Call By Reference */
+
+public class javatester 
+{
+   public static void main(string[] args)
+    {
+      intwrapper a = new intwrapper(30);
+      intwrapper b = new intwrapper(45);
+      system.out.println("before swapping, a = " + a.a + " and b = " + b.a);
+      swapfunction(a, b);
+      system.out.println("\n**now, before and after swapping values will be different here**:");
+      system.out.println("after swapping, a = " + a.a + " and b is " + b.a);
+   }
+   public static void swapfunction(intwrapper a, intwrapper b) 
+   {
+      system.out.println("before swapping(inside), a = " + a.a + " b = " + b.a);
+      intwrapper c = new intwrapper(a.a);
+      a.a = b.a;
+      b.a = c.a;
+      system.out.println("after swapping(inside), a = " + a.a + " b = " + b.a);
+   }
+}
+class intwrapper 
+{
+   public int a;
+   public intwrapper(int a){ this.a = a;}
+}
+
+Output : Before swapping, a = 30 and b = 45
+         Before swapping(Inside), a = 30 b = 45
+         After swapping(Inside), a = 45 b = 30
+         **Now, Before and After swapping values will be different here**:
+         After swapping, a = 45 and b is 30
+
+
