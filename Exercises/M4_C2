@@ -1,0 +1,34 @@
+/* First Example of Array element sorting and Searching */
+
+package sortingarrays.sort;
+import java.util.arrays;
+public class javaarraysort 
+{
+public static void main(string[] args) 
+{
+int[] intarr = {6, 10, 9, 12, 8};
+string[] strarr = {"i", "u", "a","e","o"};
+arrays.sort(intarr);
+arrays.sort(strarr);
+system.out.println(arrays.tostring(intarr));
+system.out.println(arrays.tostring(strarr));
+}
+}
+
+Output : [6, 8, 9, 10, 12]
+         [A, E, I, O, U]
+
+/* Second Example */
+
+import java.util.arrays;
+public class javasortingdemo
+{
+public static void main(string[] args)
+{
+integer[] numbers = new integer[] { 18, 19, 13, 12, 15, 17, 16 };
+arrays.sort(numbers);
+system.out.println(arrays.tostring(numbers));
+}
+}
+
+Output : [12, 13, 15, 16, 17, 18, 19]
